@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+input[type=text],input[type=email],input[type=tel]{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ececec;
+    border-radius: 3px;
+    resize: vertical;
+}
+
+textarea{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ececec;
+    border-radius: 3px;
+    resize: vertical;
+}
+label{
+    padding: 10px 10px 10px 0px;
+    display: inline-block;
+}
+
+input[type=submit]{
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ececec;
+    border-radius: 3px;
+    resize: vertical;
+}
+
+input[type=submit]:hover{
+    background-color: #45a049;
+}
+
+.container{
+    border-radius: 5px !important;
+    background-color: #f3f3f3;
+    padding: 15px;
+}
+
+.col-20{
+    float: left;
+    width:20%;
+    margin-top: 7px;
+}
+
+.col-80{
+    float:left;
+    width:80%;
+    margin-top: 7px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:500px){
+    .col-20,.col-80,input[type=submit]{
+        width:100%;
+        margin-top:0;
+    }
+}
